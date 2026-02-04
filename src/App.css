@@ -1,0 +1,325 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+.card {
+  width: min(440px, 100%);
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 24px 60px rgba(26, 55, 42, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trust {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2f8f67;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.brand {
+  font-weight: 700;
+  color: #00a652;
+  letter-spacing: 0.4px;
+  font-size: 18px;
+}
+
+.card__header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+.card__header p {
+  margin: 0;
+  color: #52615a;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quick {
+  margin: 0;
+  font-size: 13px;
+  color: #2f8f67;
+  font-weight: 600;
+}
+
+.social__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 12px 16px;
+  border: 1px solid #d4ddd8;
+  background: #ffffff;
+  font-weight: 600;
+  min-height: 48px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social__button.apple {
+  background: #1c1c1c;
+  color: #ffffff;
+  border-color: #1c1c1c;
+}
+
+.social__button.google {
+  background: #ffffff;
+}
+
+.social__button.sso,
+.social__button.passkey,
+.social__button.mfa {
+  background: #f7faf8;
+  border-color: #d4ddd8;
+  color: #1f2a25;
+}
+
+.social__button:focus-visible,
+.primary:focus-visible,
+.link:focus-visible,
+input:focus-visible {
+  outline: 2px solid #2f8f67;
+  outline-offset: 2px;
+}
+
+.divider {
+  position: relative;
+  text-align: center;
+  color: #7b8a83;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background: #e4ebe7;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.divider span {
+  background: #ffffff;
+  padding: 0 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.legend {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3a33;
+  margin-bottom: 4px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #2d3a33;
+}
+
+.field input {
+  border-radius: 10px;
+  border: 1px solid #cfd8d3;
+  padding: 12px;
+  font-size: 15px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #7b8a83;
+}
+
+.password-rules {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 12px;
+  font-size: 12px;
+  color: #6a7a73;
+}
+
+.password-rules li {
+  list-style: disc;
+}
+
+.password-rules .met {
+  color: #2f8f67;
+  font-weight: 600;
+}
+
+.password-rules .unmet {
+  color: #8a9a92;
+}
+
+.field input[aria-invalid="true"] {
+  border-color: #d7263d;
+  box-shadow: 0 0 0 1px rgba(215, 38, 61, 0.2);
+}
+
+.field input[aria-invalid="true"] + .hint {
+  color: #d7263d;
+}
+
+.primary {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  background: #00a652;
+  color: #ffffff;
+  font-weight: 600;
+  min-height: 48px;
+}
+
+.primary:disabled {
+  background: #b9c7c0;
+  cursor: not-allowed;
+}
+
+.helper {
+  margin: 0;
+  font-size: 12px;
+  color: #7b8a83;
+}
+
+.alt-auth {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alt-auth__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d3a33;
+}
+
+.alt-auth__note {
+  margin: 0;
+  font-size: 12px;
+  color: #7b8a83;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  color: #52615a;
+}
+
+.benefits {
+  margin: 4px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #3e4d46;
+  font-size: 13px;
+}
+
+.compliance {
+  font-size: 12px;
+  color: #6f7f78;
+}
+
+.compliance summary {
+  cursor: pointer;
+  list-style: none;
+  color: #2f8f67;
+  font-weight: 600;
+}
+
+.compliance summary::-webkit-details-marker {
+  display: none;
+}
+
+.compliance__details {
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  color: #8c9b94;
+}
+
+.link {
+  border: none;
+  background: none;
+  color: #2f8f67;
+  font-weight: 600;
+  padding: 0;
+  text-align: left;
+}
+
+.legal {
+  margin: 0;
+  font-size: 12px;
+  color: #7b8a83;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .card__header h1 {
+    font-size: 22px;
+  }
+
+  .social__button,
+  .primary {
+    font-size: 15px;
+  }
+
+  .password-rules {
+    grid-template-columns: 1fr;
+  }
+}
