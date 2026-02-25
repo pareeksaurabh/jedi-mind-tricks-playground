@@ -79,5 +79,6 @@ You need a **Bot User OAuth Token** (xoxb-...), not an App-level token (xapp-).
 
 ## More
 
+- **Agent config** (board config, templates, workflow): [`.cursor/agents/pm-updates.md`](../.cursor/agents/pm-updates.md) — used by Cursor pm-update commands
 - **Scheduled run (GitHub Actions)**: `.github/workflows/pm-update-weekly.yml` — add secrets in repo Settings
 - **Full docs**: `docs/handbook/slack-mcp-setup.md`, `docs/handbook/cursor-mcp-integrations.md`
