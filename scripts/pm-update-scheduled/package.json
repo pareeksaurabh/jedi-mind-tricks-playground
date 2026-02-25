@@ -1,0 +1,18 @@
+{
+  "name": "pm-update-scheduled",
+  "version": "1.0.0",
+  "description": "Scheduled Platforms PM update - fetches Jira, generates update via Claude, posts to Slack",
+  "type": "module",
+  "scripts": {
+    "run": "node run.js",
+    "test": "node run.js --dry-run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@slack/web-api": "^7.10.0",
+    "dotenv": "^16.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
